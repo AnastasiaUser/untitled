@@ -10,7 +10,7 @@ public class LogicalOptTable {
         p = true;
         q = true;
 
-        if (p) a = 1;
+        if (!p) a = 1;
         else a = 0;
         if (q) b = 1;
         else b = 0;
