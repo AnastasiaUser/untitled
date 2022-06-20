@@ -2,7 +2,7 @@ public class LongWord {
     public static void main(String[] args)  {
 
             String[] words_array = new String[]{"Strengths", "Different people", "Java"};
-            int max_len_index = 0; 
+            int max_len_index = 0;
 
 
             for (int i = 0; i < words_array.length; i++) {
