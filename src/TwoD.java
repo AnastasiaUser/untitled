@@ -24,11 +24,11 @@ public class TwoD {
             System.out.println(stringArray.length);
         }
         int k = 0;
-        ArrayUtils helper = new ArrayUtils(k);
-
-        helper.sumSmth(2, 5);
-
-        int result = helper.sumSmth2(2, 5);
-        helper.demonstrateArr(stringArray);
+//        ArrayUtils helper = new ArrayUtils(k);
+//
+//        helper.sumSmth(2, 5);
+//
+//        int result = helper.sumSmth2(2, 5);
+//        helper.demonstrateArr(stringArray);
     }
 }

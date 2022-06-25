@@ -1,28 +1,21 @@
 public class ArrayUtils {
-    int i;
-            ArrayUtils(int i) {
-        this.i = i;
-    }
-    void demonstrateArr(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Element [" + i + "]:" + arr[i]);
+    public static void main(String[] args) {
+        ArrayUtilsHW helper = new ArrayUtilsHW();
+
+        int[] arr = helper.orderArray();
+        helper.show(arr);
+
+        double[] darr = new double[]{1, 2, 4, 7, 8, 9};
+
+        for (int i = 0; i < darr.length; i++) {
+            darr[i] = darr[i] * 0.75;
         }
-        System.out.println("this was array of integers");
+
+        double[] resultOfDecreaseOfArr = ArrayUtilsHW.decreasedArr(arr, 25);
+        helper.show(resultOfDecreaseOfArr);
     }
 
-    void demonstrateArr(Vehicle[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println("Element [" + i + "]:" + arr[i]);
-        }
-        System.out.println("this was array of strings");
-    }
-    void divisionSmth (int a, int b) {
-        if (b==0) return;
-        else System.out.println(a/b);
-    }
-
-    void sumSmth(int a, int b) {
-        System.out.println(a+b);
-    }
-    int sumSmth2(int a, int b) {return a+b;}
 }
+
+
+
