@@ -2,26 +2,35 @@ package shapes;
 
 public class ShapesApp {
     public static void main(String[] args) {
-        Triangle t1 = new Triangle("colored", 4.0, 4.0);
-        Triangle t2 = new Triangle("contour", 8.0, 12.0);
-        TwoDShape t3 = new TwoDShape(3, 4);
+        ColorTriangle t1 = new ColorTriangle("Blue", "contoured", 8.0, 12.0);
+        ColorTriangle t2 = new ColorTriangle("Red", "coloured", 2.0, 2.0);
 
-        t1.setWidth(4.0);
-        t1.setHeight(4.0);
-
-        t2.setWidth(8.0);
-        t2.setHeight(12.0);
-
-        System.out.println("t1 info:");
+        System.out.println("Refernce on t1:");
         t1.showStyle();
-        t1.showStyle();
-        System.out.println("Area is equal to " + t1.areaCalc());
+        t1.showDim();
+        t1.showColor();
+        System.out.println("Area is " + t1.areaCalc());
 
-        System.out.println("t2 info: ");
+        System.out.println();
+
+        System.out.println("Refernce on t2:");
         t2.showStyle();
-        t2.showStyle();
-        System.out.println("Area is equal to " + t2.areaCalc());
+        t2.showDim();
+        t2.showColor();
+        System.out.println("Area is " + t2.areaCalc());
 
+        TwoDShape shapes[] = new TwoDShape[4];
+        shapes[0] = new Triangle("contour", 8.0, 12.0);
+        shapes[1] = new Rectangle(8.0, 12.0);
+        shapes[2] = new Square(2.0);
+        shapes[3] = new ColorTriangle("yellow", "contour", 8.0, 12.0);
 
+        System.out.println("---------------------------------------------");
+
+        for (TwoDShape shape: shapes) {
+            System.out.println(shape.getClass());
+            System.out.println(shape.getName());
+            System.out.println("Area is equal to " + shape.areaCalc()+ "\n");
+        }
     }
 }

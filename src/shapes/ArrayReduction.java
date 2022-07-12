@@ -1,3 +1,5 @@
+package shapes;
+
 import java.util.Arrays;
 
 public class ArrayReduction {

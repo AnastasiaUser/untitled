@@ -1,3 +1,5 @@
+package shapes;
+
 public class TwoD {
     public static void main(String[] args) {
 
@@ -7,9 +9,9 @@ public class TwoD {
         int [][]table2 = new int[4][5];
 
 
-        Vehicle v1 =new Vehicle("car1", 4, 5);
-        Vehicle v2 =new Vehicle("car2", 4, 5);
-        Vehicle v3 =new Vehicle("car3", 4, 5);
+        Vehicle v1 = new Vehicle("car1", 4, 5, 6);
+        Vehicle v2 = new Vehicle("car2", 4, 5, 6);
+        Vehicle v3 = new Vehicle("car3", 4, 5, 6);
 
         Vehicle[] stringArray = {v1, v2, v3};
 
@@ -24,11 +26,14 @@ public class TwoD {
             System.out.println(stringArray.length);
         }
         int k = 0;
-//        ArrayUtils helper = new ArrayUtils(k);
-//
-//        helper.sumSmth(2, 5);
-//
-//        int result = helper.sumSmth2(2, 5);
-//        helper.demonstrateArr(stringArray);
+        ArrayUtils helper = new ArrayUtils(k);
+
+        helper.divisionSmth(2, 5);
+
+        int result = helper.sumSmth2(2, 5);
+
+        helper.demonstrateArr(stringArray);
+
+        System.out.println("table");
     }
 }
